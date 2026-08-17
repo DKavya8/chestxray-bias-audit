@@ -1,1 +1,9 @@
+Total rows before cleaning : 112120
+Rule                       : drop age <= 0, age > 100, or non-numeric
+Bad-age rows found         : 14
+Bad-age values present     : [0]
+Unique patients affected   : 14
+Rows dropped               : 14
+Rows remaining             : 112106
+Unique patients remaining  : 30797
 
