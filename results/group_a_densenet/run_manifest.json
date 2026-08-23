@@ -1,0 +1,51 @@
+{
+  "dataset": "NIH ChestX-ray14",
+  "backbone": "densenet121-res224-all",
+  "condition": "condition_1_original",
+  "threshold_rule": "Youden's J; calibration split only; highest threshold on ties",
+  "pooled_fnr": "micro-FNR across all 14 finding/image pairs",
+  "bootstrap": {
+    "cluster_column": "Patient ID",
+    "draws": 1000,
+    "confidence_level": 0.95,
+    "interval": "percentile"
+  },
+  "inputs": {
+    "metadata": "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/metadata_clean.csv",
+    "prediction_shards": [
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar00.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar01.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar02.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar03.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar04.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar05.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar06.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar07.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar08.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar09.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar10.parquet",
+      "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/predictions/scores_densenet_all_tar11.parquet"
+    ],
+    "splits_root": "/kaggle/input/datasets/rihsav/nih-chestxray14-group-a-densenet-inputs/kaggle_group_a_densenet_input/splits"
+  },
+  "excluded_prediction_rows_absent_from_clean_metadata": [
+    "00009573_000.png",
+    "00010124_000.png",
+    "00010230_000.png",
+    "00011769_000.png",
+    "00013378_000.png",
+    "00013401_000.png",
+    "00014333_000.png",
+    "00016529_000.png",
+    "00018069_001.png",
+    "00019045_002.png",
+    "00019515_000.png",
+    "00020008_002.png",
+    "00021044_000.png",
+    "00025066_000.png"
+  ],
+  "outputs": {
+    "strict": "/kaggle/working/group_a_densenet/group_a_densenet_condition_1_original_strict.csv",
+    "ci_enriched": "/kaggle/working/group_a_densenet/group_a_densenet_condition_1_original_with_ci.csv"
+  }
+}
