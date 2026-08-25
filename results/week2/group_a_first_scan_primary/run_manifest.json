@@ -1,0 +1,162 @@
+{
+  "age_matching_protocol": "unchanged; no age matching, weighting, calibration, or score transformation is performed",
+  "backbone": "densenet121-res224-all",
+  "bootstrap": {
+    "cluster_column": "Patient ID",
+    "confidence_level": 0.95,
+    "draws": 1000,
+    "interval": "percentile",
+    "seed_base": 20260823
+  },
+  "condition": "condition_1_original",
+  "dataset": "NIH ChestX-ray14",
+  "eval_basis": "first_index_scan_per_patient",
+  "group_b_use": "population membership and raw-count cross-check only; no adjusted Group B result is reconstructed",
+  "inputs": {
+    "group_b_raw_counts_cross_check": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\inputs\\group_b\\group_b_counts_by_finding.parquet",
+    "group_b_reference": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\inputs\\group_b\\group_b_patient_level.parquet",
+    "metadata": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\metadata_clean.csv",
+    "prediction_shards": [
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar00.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar01.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar02.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar03.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar04.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar05.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar06.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar07.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar08.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar09.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar10.parquet",
+      "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar11.parquet"
+    ],
+    "splits_root": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\splits"
+  },
+  "outputs": {
+    "ci_enriched": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\outputs\\group_a_first_scan_per_patient\\group_a_densenet_first_index_scan_per_patient_condition_1_original_with_ci.csv",
+    "input_validation": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\outputs\\group_a_first_scan_per_patient\\input_validation.json",
+    "population_validation": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\outputs\\group_a_first_scan_per_patient\\population_validation.csv",
+    "strict": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\outputs\\group_a_first_scan_per_patient\\group_a_densenet_first_index_scan_per_patient_condition_1_original_strict.csv",
+    "thresholds_used": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\outputs\\group_a_first_scan_per_patient\\thresholds_used_from_group_a_all_image.json"
+  },
+  "per_seed_population": [
+    {
+      "duplicate_patient_rows": 0,
+      "elapsed_seconds": 0.721756,
+      "female_rows": 2789,
+      "male_rows": 3369,
+      "reference_rows": 6158,
+      "selected_rows": 6158,
+      "split_seed": 3658676649,
+      "unique_patients": 6158
+    },
+    {
+      "duplicate_patient_rows": 0,
+      "elapsed_seconds": 0.722741,
+      "female_rows": 2789,
+      "male_rows": 3371,
+      "reference_rows": 6160,
+      "selected_rows": 6160,
+      "split_seed": 768519171,
+      "unique_patients": 6160
+    },
+    {
+      "duplicate_patient_rows": 0,
+      "elapsed_seconds": 0.762766,
+      "female_rows": 2769,
+      "male_rows": 3390,
+      "reference_rows": 6159,
+      "selected_rows": 6159,
+      "split_seed": 113462462,
+      "unique_patients": 6159
+    },
+    {
+      "duplicate_patient_rows": 0,
+      "elapsed_seconds": 0.744235,
+      "female_rows": 2891,
+      "male_rows": 3269,
+      "reference_rows": 6160,
+      "selected_rows": 6160,
+      "split_seed": 2748406118,
+      "unique_patients": 6160
+    },
+    {
+      "duplicate_patient_rows": 0,
+      "elapsed_seconds": 0.729924,
+      "female_rows": 2876,
+      "male_rows": 3284,
+      "reference_rows": 6160,
+      "selected_rows": 6160,
+      "split_seed": 1569714665,
+      "unique_patients": 6160
+    },
+    {
+      "duplicate_patient_rows": 0,
+      "elapsed_seconds": 0.777752,
+      "female_rows": 2824,
+      "male_rows": 3335,
+      "reference_rows": 6159,
+      "selected_rows": 6159,
+      "split_seed": 2006902500,
+      "unique_patients": 6159
+    },
+    {
+      "duplicate_patient_rows": 0,
+      "elapsed_seconds": 0.728627,
+      "female_rows": 2859,
+      "male_rows": 3300,
+      "reference_rows": 6159,
+      "selected_rows": 6159,
+      "split_seed": 342858866,
+      "unique_patients": 6159
+    },
+    {
+      "duplicate_patient_rows": 0,
+      "elapsed_seconds": 0.638364,
+      "female_rows": 2860,
+      "male_rows": 3298,
+      "reference_rows": 6158,
+      "selected_rows": 6158,
+      "split_seed": 1591287646,
+      "unique_patients": 6158
+    },
+    {
+      "duplicate_patient_rows": 0,
+      "elapsed_seconds": 0.623679,
+      "female_rows": 2867,
+      "male_rows": 3293,
+      "reference_rows": 6160,
+      "selected_rows": 6160,
+      "split_seed": 2763601433,
+      "unique_patients": 6160
+    },
+    {
+      "duplicate_patient_rows": 0,
+      "elapsed_seconds": 0.646038,
+      "female_rows": 2863,
+      "male_rows": 3298,
+      "reference_rows": 6161,
+      "selected_rows": 6161,
+      "split_seed": 1524358342,
+      "unique_patients": 6161
+    }
+  ],
+  "pooled_fnr": "micro-FNR across all 14 finding/image pairs",
+  "population_rule": "Use the existing Group B first/index scan row for each held-out patient and split seed.",
+  "population_source": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\inputs\\group_b\\group_b_patient_level.parquet",
+  "runtime_seconds": 10.796826,
+  "secondary_all_image_results_preserved": {
+    "ci_enriched": {
+      "exists": true,
+      "path": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\_chestxray_bias_audit_push\\results\\group_a_densenet\\group_a_densenet_condition_1_original_with_ci.csv",
+      "preserved": true
+    },
+    "strict": {
+      "exists": true,
+      "path": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\_chestxray_bias_audit_push\\results\\group_a_densenet\\group_a_densenet_condition_1_original_strict.csv",
+      "preserved": true
+    }
+  },
+  "threshold_rule": "Reuse the existing Group A calibration-only Youden-J thresholds referenced by Group B; do not select from first-scan test rows.",
+  "thresholds_source": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\group_a_densenet_github\\thresholds_by_seed.json"
+}

@@ -1,0 +1,171 @@
+{
+  "age_bin_source": "bin10 from authoritative Group B patient-level parquet; 10-year labels",
+  "age_bins": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "aggregate_count_validation": {
+    "checked_rows": 880,
+    "conditions_checked": [
+      "ipw",
+      "matched",
+      "raw"
+    ],
+    "duplicate_key_count": 0,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "passed": true,
+    "tolerance": 1e-08
+  },
+  "backbone": "densenet121-res224-all",
+  "combined_rows": 32630,
+  "condition": "condition_2_age_standardized",
+  "dataset": "NIH",
+  "ece": {
+    "definition": "uniform probability bins",
+    "n_bins": 10
+  },
+  "eval_basis": "first_index_scan_per_patient",
+  "group_b_primary_variant": "ipw",
+  "group_b_rows": 12010,
+  "integration_status": "completed",
+  "matched_frac_count_validation_only": true,
+  "matching_seeds": {
+    "count": 100,
+    "manifest_base": 20260823,
+    "manifest_count": 100,
+    "path": "inputs\\group_b\\matching_seeds_for_commit.txt"
+  },
+  "outputs": {
+    "combined": "outputs\\week2_secondary_metrics\\week2_task1_secondary_metrics_combined.csv",
+    "group_b_strict": "outputs\\week2_secondary_metrics\\group_b_secondary_metrics_strict.csv"
+  },
+  "patient_profile": {
+    "age_bins": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90
+    ],
+    "duplicate_image_seed_rows": 0,
+    "duplicate_patient_seed_rows": 0,
+    "eval_basis": "first_index_scan_per_patient",
+    "ipw_weight_range": [
+      0.5,
+      1.7701649175412293
+    ],
+    "matched_frac_range": [
+      0.0,
+      1.0
+    ],
+    "patients_per_seed": {
+      "113462462": 6159,
+      "1524358342": 6161,
+      "1569714665": 6160,
+      "1591287646": 6158,
+      "2006902500": 6159,
+      "2748406118": 6160,
+      "2763601433": 6160,
+      "342858866": 6159,
+      "3658676649": 6158,
+      "768519171": 6160
+    },
+    "rows": 61594,
+    "seeds": 10,
+    "sex_values": [
+      "F",
+      "M"
+    ]
+  },
+  "per_seed_counts": {
+    "113462462": {
+      "elapsed_seconds": 0.036,
+      "patient_rows": 6159,
+      "secondary_metric_rows": 1197
+    },
+    "1524358342": {
+      "elapsed_seconds": 0.04,
+      "patient_rows": 6161,
+      "secondary_metric_rows": 1193
+    },
+    "1569714665": {
+      "elapsed_seconds": 0.035,
+      "patient_rows": 6160,
+      "secondary_metric_rows": 1218
+    },
+    "1591287646": {
+      "elapsed_seconds": 0.037,
+      "patient_rows": 6158,
+      "secondary_metric_rows": 1217
+    },
+    "2006902500": {
+      "elapsed_seconds": 0.037,
+      "patient_rows": 6159,
+      "secondary_metric_rows": 1205
+    },
+    "2748406118": {
+      "elapsed_seconds": 0.037,
+      "patient_rows": 6160,
+      "secondary_metric_rows": 1205
+    },
+    "2763601433": {
+      "elapsed_seconds": 0.036,
+      "patient_rows": 6160,
+      "secondary_metric_rows": 1192
+    },
+    "342858866": {
+      "elapsed_seconds": 0.037,
+      "patient_rows": 6159,
+      "secondary_metric_rows": 1198
+    },
+    "3658676649": {
+      "elapsed_seconds": 0.037,
+      "patient_rows": 6158,
+      "secondary_metric_rows": 1195
+    },
+    "768519171": {
+      "elapsed_seconds": 0.038,
+      "patient_rows": 6160,
+      "secondary_metric_rows": 1190
+    }
+  },
+  "primary_bin": "bin10",
+  "primary_weight_column": "ipw_weight",
+  "provenance": {
+    "aggregate_counts": "inputs\\group_b\\group_b_counts_by_finding.parquet",
+    "manifest": "inputs\\group_b\\run_manifest (1).json",
+    "manifest_filename": "run_manifest (1).json",
+    "patient_level": "inputs\\group_b\\group_b_patient_level.parquet",
+    "thresholds": "outputs\\week2_secondary_metrics\\group_a_densenet_secondary_thresholds_by_seed.json"
+  },
+  "runtime_seconds": 2.446,
+  "secondary_metrics": [
+    "auroc",
+    "auprc",
+    "f1",
+    "sensitivity",
+    "specificity",
+    "brier_score",
+    "expected_calibration_error"
+  ],
+  "sex_values": {
+    "female": "F",
+    "male": "M"
+  },
+  "threshold_rule": "Group A frozen calibration-split Youden's J thresholds; no Group B threshold refit",
+  "weight_semantics": "uncapped, held fixed in bootstrap"
+}

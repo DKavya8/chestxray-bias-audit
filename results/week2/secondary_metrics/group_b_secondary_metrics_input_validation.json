@@ -1,0 +1,105 @@
+{
+  "aggregate_count_validation": {
+    "checked_rows": 880,
+    "conditions_checked": [
+      "ipw",
+      "matched",
+      "raw"
+    ],
+    "duplicate_key_count": 0,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "passed": true,
+    "tolerance": 1e-08
+  },
+  "candidate_files": [
+    "inputs\\group_b\\group_b_counts_by_finding.parquet",
+    "inputs\\group_b\\group_b_patient_level.parquet",
+    "inputs\\group_b\\matching_seeds_for_commit.txt",
+    "inputs\\group_b\\run_manifest (1).json"
+  ],
+  "counts_path": "inputs\\group_b\\group_b_counts_by_finding.parquet",
+  "eval_basis": "first_index_scan_per_patient",
+  "group_b_root": "inputs\\group_b",
+  "manifest": {
+    "backbone": "densenet121-res224-all",
+    "bootstrap_B": 1000,
+    "dataset": "NIH",
+    "eval_basis": "first_index_scan_per_patient",
+    "inner_matches": 15,
+    "match_seed_base": 20260823,
+    "n_match_seeds": 100,
+    "primary_bin": "bin10",
+    "split_seeds": [
+      3658676649,
+      768519171,
+      113462462,
+      2748406118,
+      1569714665,
+      2006902500,
+      342858866,
+      1591287646,
+      2763601433,
+      1524358342
+    ],
+    "thresholds_source": "group_a thresholds_by_seed.json",
+    "weights": "uncapped, held fixed in bootstrap"
+  },
+  "manifest_error": null,
+  "manifest_name": "run_manifest (1).json",
+  "manifest_path": "inputs\\group_b\\run_manifest (1).json",
+  "matching_seeds_path": "inputs\\group_b\\matching_seeds_for_commit.txt",
+  "missing_roles": [],
+  "patient_path": "inputs\\group_b\\group_b_patient_level.parquet",
+  "patient_profile": {
+    "age_bins": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90
+    ],
+    "duplicate_image_seed_rows": 0,
+    "duplicate_patient_seed_rows": 0,
+    "eval_basis": "first_index_scan_per_patient",
+    "ipw_weight_range": [
+      0.5,
+      1.7701649175412293
+    ],
+    "matched_frac_range": [
+      0.0,
+      1.0
+    ],
+    "patients_per_seed": {
+      "113462462": 6159,
+      "1524358342": 6161,
+      "1569714665": 6160,
+      "1591287646": 6158,
+      "2006902500": 6159,
+      "2748406118": 6160,
+      "2763601433": 6160,
+      "342858866": 6159,
+      "3658676649": 6158,
+      "768519171": 6160
+    },
+    "rows": 61594,
+    "seeds": 10,
+    "sex_values": [
+      "F",
+      "M"
+    ]
+  },
+  "primary_bin": "bin10",
+  "primary_condition": "condition_2_age_standardized",
+  "primary_weight_column": "ipw_weight",
+  "ready_for_computation": true,
+  "reason": "Authoritative Group B artifacts are present; Group A scores are not used as a substitute.",
+  "status": "ready",
+  "thresholds_path": "outputs\\week2_secondary_metrics\\group_a_densenet_secondary_thresholds_by_seed.json",
+  "used_as_substitute": []
+}

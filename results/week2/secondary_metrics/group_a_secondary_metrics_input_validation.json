@@ -1,0 +1,19 @@
+{
+  "condition": "condition_1_original",
+  "frozen_seeds": [
+    3658676649,
+    768519171,
+    113462462,
+    2748406118,
+    1569714665,
+    2006902500,
+    342858866,
+    1591287646,
+    2763601433,
+    1524358342
+  ],
+  "group": "Group A",
+  "group_a_root": "kaggle_group_a_densenet_input",
+  "missing_inputs": [],
+  "ready_for_computation": true
+}

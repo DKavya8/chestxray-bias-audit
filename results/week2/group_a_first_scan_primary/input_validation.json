@@ -1,0 +1,168 @@
+{
+  "condition": "condition_1_original",
+  "eval_basis": "first_index_scan_per_patient",
+  "existing_all_image_secondary": {
+    "ci_enriched": {
+      "exists": true,
+      "path": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\_chestxray_bias_audit_push\\results\\group_a_densenet\\group_a_densenet_condition_1_original_with_ci.csv",
+      "preserved": true
+    },
+    "strict": {
+      "exists": true,
+      "path": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\_chestxray_bias_audit_push\\results\\group_a_densenet\\group_a_densenet_condition_1_original_strict.csv",
+      "preserved": true
+    }
+  },
+  "group_a_assembly": {
+    "assembled_rows": 112106,
+    "excluded_prediction_rows_absent_from_clean_metadata": [
+      "00009573_000.png",
+      "00010124_000.png",
+      "00010230_000.png",
+      "00011769_000.png",
+      "00013378_000.png",
+      "00013401_000.png",
+      "00014333_000.png",
+      "00016529_000.png",
+      "00018069_001.png",
+      "00019045_002.png",
+      "00019515_000.png",
+      "00020008_002.png",
+      "00021044_000.png",
+      "00025066_000.png"
+    ],
+    "metadata_rows": 112106,
+    "model_backbone": "torchxrayvision.DenseNet121",
+    "model_weights": "densenet121-res224-all",
+    "prediction_rows_after_metadata_filter": 112106,
+    "prediction_shard_rows": 112120
+  },
+  "group_b_raw_count_cross_check": {
+    "condition_checked": "raw",
+    "counts_path": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\inputs\\group_b\\group_b_counts_by_finding.parquet",
+    "rows_checked": 300,
+    "status": "validated",
+    "used_as_group_a_input": false,
+    "used_only_for_cross_check": true
+  },
+  "output_schema": {
+    "ci_columns": [
+      "dataset",
+      "backbone",
+      "condition",
+      "split_seed",
+      "finding",
+      "subgroup",
+      "metric",
+      "value",
+      "ci_lower",
+      "ci_upper"
+    ],
+    "ci_rows": 450,
+    "strict_columns": [
+      "dataset",
+      "backbone",
+      "condition",
+      "split_seed",
+      "finding",
+      "subgroup",
+      "metric",
+      "value"
+    ],
+    "strict_rows": 450
+  },
+  "ready_for_computation": true,
+  "reference_population": {
+    "path": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\inputs\\group_b\\group_b_patient_level.parquet",
+    "patient_uniqueness_validated": true,
+    "rows": 61594,
+    "unique_seed_image_rows": 61594,
+    "unique_seed_patient_rows": 61594
+  },
+  "runtime_seconds": 10.796826,
+  "split_integrity": {
+    "splits_root": "C:\\Users\\risha\\OneDrive\\Documents\\Algoverse\\kaggle_group_a_densenet_input\\splits",
+    "validated_seeds": [
+      {
+        "calibration_patients": 24644,
+        "reference_calibration_overlap": 0,
+        "reference_patients": 6158,
+        "reference_subset_of_test": true,
+        "split_seed": 3658676649,
+        "test_patients": 6161
+      },
+      {
+        "calibration_patients": 24644,
+        "reference_calibration_overlap": 0,
+        "reference_patients": 6160,
+        "reference_subset_of_test": true,
+        "split_seed": 768519171,
+        "test_patients": 6161
+      },
+      {
+        "calibration_patients": 24644,
+        "reference_calibration_overlap": 0,
+        "reference_patients": 6159,
+        "reference_subset_of_test": true,
+        "split_seed": 113462462,
+        "test_patients": 6161
+      },
+      {
+        "calibration_patients": 24644,
+        "reference_calibration_overlap": 0,
+        "reference_patients": 6160,
+        "reference_subset_of_test": true,
+        "split_seed": 2748406118,
+        "test_patients": 6161
+      },
+      {
+        "calibration_patients": 24644,
+        "reference_calibration_overlap": 0,
+        "reference_patients": 6160,
+        "reference_subset_of_test": true,
+        "split_seed": 1569714665,
+        "test_patients": 6161
+      },
+      {
+        "calibration_patients": 24644,
+        "reference_calibration_overlap": 0,
+        "reference_patients": 6159,
+        "reference_subset_of_test": true,
+        "split_seed": 2006902500,
+        "test_patients": 6161
+      },
+      {
+        "calibration_patients": 24644,
+        "reference_calibration_overlap": 0,
+        "reference_patients": 6159,
+        "reference_subset_of_test": true,
+        "split_seed": 342858866,
+        "test_patients": 6161
+      },
+      {
+        "calibration_patients": 24644,
+        "reference_calibration_overlap": 0,
+        "reference_patients": 6158,
+        "reference_subset_of_test": true,
+        "split_seed": 1591287646,
+        "test_patients": 6161
+      },
+      {
+        "calibration_patients": 24644,
+        "reference_calibration_overlap": 0,
+        "reference_patients": 6160,
+        "reference_subset_of_test": true,
+        "split_seed": 2763601433,
+        "test_patients": 6161
+      },
+      {
+        "calibration_patients": 24644,
+        "reference_calibration_overlap": 0,
+        "reference_patients": 6161,
+        "reference_subset_of_test": true,
+        "split_seed": 1524358342,
+        "test_patients": 6161
+      }
+    ]
+  }
+}

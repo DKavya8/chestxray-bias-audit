@@ -1,0 +1,268 @@
+{
+  "age_bin_source": "metadata_clean.csv age_bin column; 5-year labels preserved",
+  "age_bins": [
+    "00-04",
+    "05-09",
+    "10-14",
+    "15-19",
+    "20-24",
+    "25-29",
+    "30-34",
+    "35-39",
+    "40-44",
+    "45-49",
+    "50-54",
+    "55-59",
+    "60-64",
+    "65-69",
+    "70-74",
+    "75-79",
+    "80-84",
+    "85-89",
+    "90-94",
+    "95-99"
+  ],
+  "assembly": {
+    "excluded_prediction_rows_absent_from_metadata": [
+      "00009573_000.png",
+      "00010124_000.png",
+      "00010230_000.png",
+      "00011769_000.png",
+      "00013378_000.png",
+      "00013401_000.png",
+      "00014333_000.png",
+      "00016529_000.png",
+      "00018069_001.png",
+      "00019045_002.png",
+      "00019515_000.png",
+      "00020008_002.png",
+      "00021044_000.png",
+      "00025066_000.png"
+    ],
+    "joined_rows": 112106,
+    "metadata_rows": 112106,
+    "prediction_rows_before_metadata_filter": 112120,
+    "provenance": {
+      "ARROW:schema": "/////1ANAAAQAAAAAAAKAA4ABgAFAAgACgAAAAABBAAQAAAAAAAKAAwAAAAEAAgACgAAAIQIAAAEAAAAFQAAAFAIAAAICAAAxAcAAIgHAABYBwAA6AYAAKgGAABIBgAAFAUAAOQDAAB0AwAAPAIAAAQCAADUAQAATAEAACABAAD4AAAA0AAAAKwAAABYAAAABAAAAAz4//8gAAAABAAAABIAAAAyMi44NDM1MjkzMjI0NDg2MjQAACYAAABpbWFnZXNfcGVyX3NlY29uZF9leGNsdWRpbmdfbW9kZWxfbG9hZAAAXPj//yAAAAAEAAAAEgAAADIxOC44MzY1ODczNTE5OTk5MgAAJgAAAGluZmVyZW5jZV9zZWNvbmRzX2V4Y2x1ZGluZ19tb2RlbF9sb2FkAACs+P//EAAAAAQAAAABAAAAMgAAAAcAAAB3b3JrZXJzAMz4//8UAAAABAAAAAYAAAAiY3VkYSIAAAYAAABkZXZpY2UAAPD4//8QAAAABAAAAAIAAAA2NAAACgAAAGJhdGNoX3NpemUAABT5//8UAAAABAAAAAQAAAA0OTk5AAAAAAoAAABudW1faW1hZ2VzAAA8+f//cAAAAAQAAABjAAAAIkFVUk9DIGludGVudGlvbmFsbHkgbm90IGNvbXB1dGVkOyB0ZWFtIHNwbGl0IGFuZCBncm91bmQtdHJ1dGgvSW1hZ2UgSW5kZXggbWFwcGluZyBhcmUgbm90IGZyb3plbi4iAAoAAABhdXJvY19ub3RlAADA+f//FAAAAAQAAAAFAAAAZmFsc2UAAAAPAAAAYXVyb2NfdmFsaWRhdGVkAOz5//8UAAAABAAAAAQAAAB0cnVlAAAAABUAAABsYWJlbF9vcmRlcl92YWxpZGF0ZWQAAAAg+v//FAEAAAQAAAAGAQAAWyJBdGVsZWN0YXNpcyIsICJDb25zb2xpZGF0aW9uIiwgIkluZmlsdHJhdGlvbiIsICJQbmV1bW90aG9yYXgiLCAiRWRlbWEiLCAiRW1waHlzZW1hIiwgIkZpYnJvc2lzIiwgIkVmZnVzaW9uIiwgIlBuZXVtb25pYSIsICJQbGV1cmFsX1RoaWNrZW5pbmciLCAiQ2FyZGlvbWVnYWx5IiwgIk5vZHVsZSIsICJNYXNzIiwgIkhlcm5pYSIsICJMdW5nIExlc2lvbiIsICJGcmFjdHVyZSIsICJMdW5nIE9wYWNpdHkiLCAiRW5sYXJnZWQgQ2FyZGlvbWVkaWFzdGludW0iXQAAFQAAAGV4cGVjdGVkX21vZGVsX2xhYmVscwAAAFT7//9MAAAABAAAAD4AAABbMCwgMSwgMiwgMywgNCwgNSwgNiwgNywgOCwgOSwgMTAsIDExLCAxMiwgMTMsIDE0LCAxNSwgMTYsIDE3XQAAFAAAAG91dHB1dF9sYWJlbF9pbmRpY2VzAAAAAMD7//8UAQAABAAAAAYBAABbIkF0ZWxlY3Rhc2lzIiwgIkNvbnNvbGlkYXRpb24iLCAiSW5maWx0cmF0aW9uIiwgIlBuZXVtb3Rob3JheCIsICJFZGVtYSIsICJFbXBoeXNlbWEiLCAiRmlicm9zaXMiLCAiRWZmdXNpb24iLCAiUG5ldW1vbmlhIiwgIlBsZXVyYWxfVGhpY2tlbmluZyIsICJDYXJkaW9tZWdhbHkiLCAiTm9kdWxlIiwgIk1hc3MiLCAiSGVybmlhIiwgIkx1bmcgTGVzaW9uIiwgIkZyYWN0dXJlIiwgIkx1bmcgT3BhY2l0eSIsICJFbmxhcmdlZCBDYXJkaW9tZWRpYXN0aW51bSJdAAANAAAAb3V0cHV0X2xhYmVscwAAAOz8//8UAQAABAAAAAYBAABbIkF0ZWxlY3Rhc2lzIiwgIkNvbnNvbGlkYXRpb24iLCAiSW5maWx0cmF0aW9uIiwgIlBuZXVtb3Rob3JheCIsICJFZGVtYSIsICJFbXBoeXNlbWEiLCAiRmlicm9zaXMiLCAiRWZmdXNpb24iLCAiUG5ldW1vbmlhIiwgIlBsZXVyYWxfVGhpY2tlbmluZyIsICJDYXJkaW9tZWdhbHkiLCAiTm9kdWxlIiwgIk1hc3MiLCAiSGVybmlhIiwgIkx1bmcgTGVzaW9uIiwgIkZyYWN0dXJlIiwgIkx1bmcgT3BhY2l0eSIsICJFbmxhcmdlZCBDYXJkaW9tZWRpYXN0aW51bSJdAAAQAAAAcmF3X21vZGVsX2xhYmVscwAAAAAc/v//QAAAAAQAAAAzAAAAInNpZ21vaWQobW9kZWwuY2xhc3NpZmllcihtb2RlbC5mZWF0dXJlczIoYmF0Y2gpKSkiABAAAABzY29yZV9kZWZpbml0aW9uAAAAAHj+//8UAAAABAAAAAQAAAB0cnVlAAAAAB4AAABwcmVwcm9jZXNzaW5nX2ZhbGxiYWNrX2FsbG93ZWQAALT+//9UAAAABAAAAEQAAAAidG9yY2h4cmF5dmlzaW9uLmRhdGFzZXRzLm5vcm1hbGl6ZStYUmF5Q2VudGVyQ3JvcCtYUmF5UmVzaXplcigyMjQpIgAAAAANAAAAcHJlcHJvY2Vzc2luZwAAACD///8YAAAABAAAAAkAAAAiMjI0eDIyNCIAAAAKAAAAaW5wdXRfc2l6ZQAATP///ygAAAAEAAAAGAAAACJkZW5zZW5ldDEyMS1yZXMyMjQtYWxsIgAAAAAHAAAAd2VpZ2h0cwCE////LAAAAAQAAAAdAAAAInRvcmNoeHJheXZpc2lvbi5EZW5zZU5ldDEyMSIAAAAIAAAAYmFja2JvbmUAAAAAxP///yQAAAAEAAAAFwAAACJQYXRoKGltYWdlX3BhdGgpLm5hbWUiAA8AAABpbWFnZV9pbmRleF9rZXkACAAMAAQACAAIAAAAEAAAAAQAAAADAAAAIjEiAA4AAABzY2hlbWFfdmVyc2lvbgAAFgAAAGwEAAAsBAAA/AMAANADAACUAwAAXAMAACQDAADsAgAAvAIAAIgCAABUAgAAIAIAAOwBAACwAQAAeAEAAEgBAAAYAQAA6AAAALQAAACAAAAASAAAAAQAAAD8+///AAABAxAAAAAsAAAABAAAAAAAAAAaAAAARW5sYXJnZWQgQ2FyZGlvbWVkaWFzdGludW0AAML8//8AAAEAPPz//wAAAQMQAAAAIAAAAAQAAAAAAAAADAAAAEx1bmcgT3BhY2l0eQAAAAD2/P//AAABAHD8//8AAAEDEAAAABwAAAAEAAAAAAAAAAgAAABGcmFjdHVyZQAAAAAm/f//AAABAKD8//8AAAEDEAAAABwAAAAEAAAAAAAAAAsAAABMdW5nIExlc2lvbgBW/f//AAABAND8//8AAAEDEAAAABgAAAAEAAAAAAAAAAYAAABIZXJuaWEAAIL9//8AAAEA/Pz//wAAAQMQAAAAGAAAAAQAAAAAAAAABAAAAE1hc3MAAAAArv3//wAAAQAo/f//AAABAxAAAAAYAAAABAAAAAAAAAAGAAAATm9kdWxlAADa/f//AAABAFT9//8AAAEDEAAAACAAAAAEAAAAAAAAAAwAAABDYXJkaW9tZWdhbHkAAAAADv7//wAAAQCI/f//AAABAxAAAAAkAAAABAAAAAAAAAASAAAAUGxldXJhbF9UaGlja2VuaW5nAABG/v//AAABAMD9//8AAAEDEAAAABwAAAAEAAAAAAAAAAkAAABQbmV1bW9uaWEAAAB2/v//AAABAPD9//8AAAEDEAAAABwAAAAEAAAAAAAAAAgAAABFZmZ1c2lvbgAAAACm/v//AAABACD+//8AAAEDEAAAABwAAAAEAAAAAAAAAAgAAABGaWJyb3NpcwAAAADW/v//AAABAFD+//8AAAEDEAAAABwAAAAEAAAAAAAAAAkAAABFbXBoeXNlbWEAAAAG////AAABAID+//8AAAEDEAAAABgAAAAEAAAAAAAAAAUAAABFZGVtYQAAADL///8AAAEArP7//wAAAQMQAAAAIAAAAAQAAAAAAAAADAAAAFBuZXVtb3Rob3JheAAAAABm////AAABAOD+//8AAAEDEAAAACAAAAAEAAAAAAAAAAwAAABJbmZpbHRyYXRpb24AAAAAmv///wAAAQAU////AAABAxAAAAAgAAAABAAAAAAAAAANAAAAQ29uc29saWRhdGlvbgAAAM7///8AAAEASP///wAAAQMQAAAAJAAAAAQAAAAAAAAACwAAAEF0ZWxlY3Rhc2lzAAAABgAIAAYABgAAAAAAAQCA////AAABBRAAAAAYAAAABAAAAAAAAAAHAAAAd2VpZ2h0cwBs////qP///wAAAQUQAAAAHAAAAAQAAAAAAAAACAAAAGJhY2tib25lAAAAAJj////U////AAABBRAAAAAcAAAABAAAAAAAAAAKAAAAaW1hZ2VfcGF0aAAAxP///xAAFAAIAAYABwAMAAAAEAAQAAAAAAABBRAAAAAgAAAABAAAAAAAAAALAAAASW1hZ2UgSW5kZXgABAAEAAQAAAA=",
+      "auroc_note": "AUROC intentionally not computed; team split and ground-truth/Image Index mapping are not frozen.",
+      "auroc_validated": false,
+      "backbone": "torchxrayvision.DenseNet121",
+      "batch_size": 64,
+      "device": "cuda",
+      "expected_model_labels": [
+        "Atelectasis",
+        "Consolidation",
+        "Infiltration",
+        "Pneumothorax",
+        "Edema",
+        "Emphysema",
+        "Fibrosis",
+        "Effusion",
+        "Pneumonia",
+        "Pleural_Thickening",
+        "Cardiomegaly",
+        "Nodule",
+        "Mass",
+        "Hernia",
+        "Lung Lesion",
+        "Fracture",
+        "Lung Opacity",
+        "Enlarged Cardiomediastinum"
+      ],
+      "image_index_key": "Path(image_path).name",
+      "images_per_second_excluding_model_load": 22.843529322448624,
+      "inference_seconds_excluding_model_load": 218.83658735199992,
+      "input_size": "224x224",
+      "label_order_validated": true,
+      "num_images": 4999,
+      "output_label_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "output_labels": [
+        "Atelectasis",
+        "Consolidation",
+        "Infiltration",
+        "Pneumothorax",
+        "Edema",
+        "Emphysema",
+        "Fibrosis",
+        "Effusion",
+        "Pneumonia",
+        "Pleural_Thickening",
+        "Cardiomegaly",
+        "Nodule",
+        "Mass",
+        "Hernia",
+        "Lung Lesion",
+        "Fracture",
+        "Lung Opacity",
+        "Enlarged Cardiomediastinum"
+      ],
+      "preprocessing": "torchxrayvision.datasets.normalize+XRayCenterCrop+XRayResizer(224)",
+      "preprocessing_fallback_allowed": true,
+      "raw_model_labels": [
+        "Atelectasis",
+        "Consolidation",
+        "Infiltration",
+        "Pneumothorax",
+        "Edema",
+        "Emphysema",
+        "Fibrosis",
+        "Effusion",
+        "Pneumonia",
+        "Pleural_Thickening",
+        "Cardiomegaly",
+        "Nodule",
+        "Mass",
+        "Hernia",
+        "Lung Lesion",
+        "Fracture",
+        "Lung Opacity",
+        "Enlarged Cardiomediastinum"
+      ],
+      "schema_version": "1",
+      "score_definition": "sigmoid(model.classifier(model.features2(batch)))",
+      "weights": "densenet121-res224-all",
+      "workers": 2
+    }
+  },
+  "backbone": "densenet121-res224-all",
+  "condition": "condition_1_original",
+  "dataset": "NIH ChestX-ray14",
+  "ece": {
+    "definition": "uniform probability bins",
+    "n_bins": 10
+  },
+  "group_b": {
+    "candidate_files": [],
+    "group_b_root": null,
+    "missing_roles": [
+      "official Group B matched or inverse-probability-weighted held-out rows",
+      "Group B finding labels and model/calibrated scores",
+      "the frozen Group B threshold or score-transformation provenance",
+      "sex and the frozen 5-year age-bin assignment for every included row"
+    ],
+    "ready_for_computation": false,
+    "reason": "No official Group B matched/weighted score-label artifact was supplied. Group A raw scores are not used as a substitute.",
+    "status": "blocked",
+    "used_as_substitute": []
+  },
+  "inputs": {
+    "group_a_root": "kaggle_group_a_densenet_input",
+    "metadata": "kaggle_group_a_densenet_input\\metadata_clean.csv",
+    "prediction_shards": [
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar00.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar01.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar02.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar03.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar04.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar05.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar06.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar07.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar08.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar09.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar10.parquet",
+      "kaggle_group_a_densenet_input\\predictions\\scores_densenet_all_tar11.parquet"
+    ],
+    "splits_root": "kaggle_group_a_densenet_input\\splits"
+  },
+  "outputs": {
+    "strict": "outputs\\week2_secondary_metrics\\group_a_densenet_secondary_metrics_strict.csv"
+  },
+  "per_seed_counts": {
+    "113462462": {
+      "calibration_rows": 89706,
+      "elapsed_seconds": 0.579,
+      "secondary_metric_rows": 2045,
+      "test_rows": 22400
+    },
+    "1524358342": {
+      "calibration_rows": 89925,
+      "elapsed_seconds": 0.537,
+      "secondary_metric_rows": 2066,
+      "test_rows": 22181
+    },
+    "1569714665": {
+      "calibration_rows": 89773,
+      "elapsed_seconds": 0.547,
+      "secondary_metric_rows": 2078,
+      "test_rows": 22333
+    },
+    "1591287646": {
+      "calibration_rows": 89737,
+      "elapsed_seconds": 0.555,
+      "secondary_metric_rows": 2064,
+      "test_rows": 22369
+    },
+    "2006902500": {
+      "calibration_rows": 90046,
+      "elapsed_seconds": 0.646,
+      "secondary_metric_rows": 2069,
+      "test_rows": 22060
+    },
+    "2748406118": {
+      "calibration_rows": 89972,
+      "elapsed_seconds": 0.6,
+      "secondary_metric_rows": 2068,
+      "test_rows": 22134
+    },
+    "2763601433": {
+      "calibration_rows": 89828,
+      "elapsed_seconds": 0.542,
+      "secondary_metric_rows": 2061,
+      "test_rows": 22278
+    },
+    "342858866": {
+      "calibration_rows": 90071,
+      "elapsed_seconds": 0.569,
+      "secondary_metric_rows": 2063,
+      "test_rows": 22035
+    },
+    "3658676649": {
+      "calibration_rows": 89617,
+      "elapsed_seconds": 0.617,
+      "secondary_metric_rows": 2049,
+      "test_rows": 22489
+    },
+    "768519171": {
+      "calibration_rows": 89748,
+      "elapsed_seconds": 0.561,
+      "secondary_metric_rows": 2057,
+      "test_rows": 22358
+    }
+  },
+  "runtime_seconds": 8.262,
+  "secondary_metrics": [
+    "auroc",
+    "auprc",
+    "f1",
+    "sensitivity",
+    "specificity",
+    "brier_score",
+    "expected_calibration_error"
+  ],
+  "sex_values": {
+    "female": "F",
+    "male": "M"
+  },
+  "threshold_rule": "Youden's J; calibration split only; highest threshold on ties",
+  "thresholds_by_seed": "outputs\\week2_secondary_metrics\\group_a_densenet_secondary_thresholds_by_seed.json",
+  "workers": 1
+}

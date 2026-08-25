@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "analysis": "week2_task2_group_b_permutation_bh",
+  "official_adjusted_patient_level_input": true,
+  "validation_status": "passed",
+  "result_path": "outputs\\week2_task2\\task2_group_b_permutation_bh.csv",
+  "metadata_path": "outputs\\week2_task2\\task2_group_b_metadata.json"
+}
