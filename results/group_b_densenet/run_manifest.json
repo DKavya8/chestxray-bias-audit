@@ -22,3 +22,28 @@
   "eval_basis": "first_index_scan_per_patient",
   "weights": "uncapped, held fixed in bootstrap"
 }
+
+"eval_basis": "one first-scan per patient (frozen matching protocol)",
+"eval_basis_note": "Group B evaluated on first-scan-per-patient (~6,160/split). Group A condition_1_original is currently all-images (~22,000/split); confirmed Group B's all-images raw gap reproduces Group A exactly. Primary raw-baseline basis pending team decision — team leaning toward recomputing Group A on first-scan so both share one basis. See deviation log.",
+"n_patients_per_split_approx": 6160,
+"raw_fnr_level_note": "Micro-pooled FNR across 14 findings at frozen Youden-J thresholds is ~0.50 per sex (e.g. seed 3658676649: F=0.5026, M=0.4843). High absolute FNR is expected for this rare-finding, first-scan, balanced-threshold setup — not an error.",
+"results_summary_mean_across_10_splits": {
+  "S_raw": 0.02709,
+  "S_match": 0.01608,
+  "S_ipw": 0.01626,
+  "dS_match": 0.01101,
+  "dS_ipw": 0.01083
+},
+"bootstrap_ci_95_pooled_across_splits": {
+  "S_raw": [-0.0155, 0.0699],
+  "S_match": [-0.0270, 0.0591],
+  "S_ipw": [-0.0263, 0.0596],
+  "dS_match": [0.0038, 0.0191],
+  "dS_ipw": [0.0066, 0.0149]
+},
+"significance_note": "Sex-gap CIs (S_raw, S_match, S_ipw) all cross zero — gap not statistically significant. Reduction CIs (dS_match, dS_ipw) are entirely above zero — age-standardization significantly shrinks the gap. Facts recorded for provenance; interpretation deferred.",
+"artifacts": {
+  "aggregates": ["group_b_densenet_agestd_with_ci.csv", "group_b_densenet_agestd_points.csv", "group_b_summary_across_splits.csv"],
+  "patient_level": "group_b_patient_level.parquet",
+  "counts_by_finding": "group_b_counts_by_finding.parquet"
+}
