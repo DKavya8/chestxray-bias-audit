@@ -24,6 +24,8 @@ from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple
 from urllib.parse import urlparse
 
+from model_integrity import assert_model_state_unchanged, capture_model_state
+
 
 SUPPORTED_WEIGHTS = (
     "densenet121-res224-nih",
@@ -643,6 +645,12 @@ def run(args: argparse.Namespace) -> int:
     model = _load_model(xrv, torch, args.weights, args.cache_dir)
     raw_labels, output_labels, output_indices = _validated_labels(model, args.weights, expected_labels)
     model.to(device)
+    model_identity = f"{args.weights}|{model_config['backbone']}"
+    model_state_baseline = capture_model_state(
+        model,
+        model_id=model_identity,
+        stage="after intentional model load and device placement",
+    )
 
     dataset = _ImageDataset(paths, input_resolution=input_resolution)
     loader = torch.utils.data.DataLoader(
@@ -678,6 +686,12 @@ def run(args: argparse.Namespace) -> int:
             )
     if device.type == "cuda":
         torch.cuda.synchronize(device)
+    assert_model_state_unchanged(
+        model,
+        model_state_baseline,
+        model_id=model_identity,
+        stage="post-hoc inference/evaluation",
+    )
     elapsed = time.perf_counter() - started
     if not score_rows:
         raise RuntimeError("No inference rows were produced.")
